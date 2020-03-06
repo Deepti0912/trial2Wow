@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a9db3a8-8a86-487a-b5c9-f326506a6402" name="Default Changelist" comment="" />
+    <list default="true" id="6a9db3a8-8a86-487a-b5c9-f326506a6402" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/f1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDef.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +32,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1Yhgopm6EChMeqydlZRplAvJSih" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,13 +40,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: f1 (2)">
+  <component name="RunManager" selected="Cucumber java.Scenario: Test">
     <configuration name="Feature: f1 (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/f1.feature" />
@@ -70,16 +82,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: f1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/f1.feature" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="open_Browser" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: f1" />
+    <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/login.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="trial2" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: login" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,16 +118,16 @@
       </method>
     </configuration>
     <configuration name="Scenario: Test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.1" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/f1.feature" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="open_Browser" />
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/login.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="trial2" />
       <option name="NAME_FILTER" value="^Test$" />
-      <option name="PROGRAM_PARAMETERS" value=" --format org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Test$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Test$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Scenario: Test" />
+        <item itemvalue="Cucumber java.Feature: login" />
         <item itemvalue="Cucumber java.Feature: f1 (2)" />
         <item itemvalue="Cucumber java.Feature: f1 (1)" />
         <item itemvalue="Cucumber java.Scenario: Test (1)" />
-        <item itemvalue="Cucumber java.Feature: f1" />
-        <item itemvalue="Cucumber java.Scenario: Test" />
       </list>
     </recent_temporary>
   </component>
@@ -168,30 +180,30 @@
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583458170835" />
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.683@0.0.1280.683" timestamp="1583447585857" />
-    <state width="1876" height="401" key="GridCell.Tab.0.bottom" timestamp="1583466904288">
-      <screen x="1920" y="0" width="1920" height="1144" />
+    <state width="1237" height="216" key="GridCell.Tab.0.bottom" timestamp="1583484033470">
+      <screen x="0" y="0" width="1280" height="683" />
     </state>
     <state width="1251" height="241" key="GridCell.Tab.0.bottom/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583462305841" />
     <state width="1876" height="401" key="GridCell.Tab.0.bottom/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583466904288" />
-    <state width="1237" height="119" key="GridCell.Tab.0.bottom/0.0.1280.683@0.0.1280.683" timestamp="1583446607176" />
-    <state width="1876" height="401" key="GridCell.Tab.0.center" timestamp="1583466904288">
-      <screen x="1920" y="0" width="1920" height="1144" />
+    <state width="1237" height="216" key="GridCell.Tab.0.bottom/0.0.1280.683@0.0.1280.683" timestamp="1583484033470" />
+    <state width="1237" height="216" key="GridCell.Tab.0.center" timestamp="1583484033470">
+      <screen x="0" y="0" width="1280" height="683" />
     </state>
     <state width="1251" height="241" key="GridCell.Tab.0.center/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583462305840" />
     <state width="1876" height="401" key="GridCell.Tab.0.center/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583466904288" />
-    <state width="1237" height="119" key="GridCell.Tab.0.center/0.0.1280.683@0.0.1280.683" timestamp="1583446607176" />
-    <state width="1876" height="401" key="GridCell.Tab.0.left" timestamp="1583466904287">
-      <screen x="1920" y="0" width="1920" height="1144" />
+    <state width="1237" height="216" key="GridCell.Tab.0.center/0.0.1280.683@0.0.1280.683" timestamp="1583484033470" />
+    <state width="1237" height="216" key="GridCell.Tab.0.left" timestamp="1583484033469">
+      <screen x="0" y="0" width="1280" height="683" />
     </state>
     <state width="1251" height="241" key="GridCell.Tab.0.left/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583462305840" />
     <state width="1876" height="401" key="GridCell.Tab.0.left/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583466904287" />
-    <state width="1237" height="119" key="GridCell.Tab.0.left/0.0.1280.683@0.0.1280.683" timestamp="1583446607176" />
-    <state width="1876" height="401" key="GridCell.Tab.0.right" timestamp="1583466904288">
-      <screen x="1920" y="0" width="1920" height="1144" />
+    <state width="1237" height="216" key="GridCell.Tab.0.left/0.0.1280.683@0.0.1280.683" timestamp="1583484033469" />
+    <state width="1237" height="216" key="GridCell.Tab.0.right" timestamp="1583484033470">
+      <screen x="0" y="0" width="1280" height="683" />
     </state>
     <state width="1251" height="241" key="GridCell.Tab.0.right/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583462305841" />
     <state width="1876" height="401" key="GridCell.Tab.0.right/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583466904288" />
-    <state width="1237" height="119" key="GridCell.Tab.0.right/0.0.1280.683@0.0.1280.683" timestamp="1583446607176" />
+    <state width="1237" height="216" key="GridCell.Tab.0.right/0.0.1280.683@0.0.1280.683" timestamp="1583484033470" />
     <state width="1876" height="401" key="GridCell.Tab.1.bottom" timestamp="1583466892579">
       <screen x="1920" y="0" width="1920" height="1144" />
     </state>
@@ -217,25 +229,13 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583459080995" />
     <state x="142" y="0" key="SettingsEditor/0.0.1280.683@0.0.1280.683" timestamp="1583411859424" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1583484171387">
+      <screen x="0" y="0" width="1280" height="683" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.683@0.0.1280.683" timestamp="1583484171387" />
     <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1583469529250">
       <screen x="0" y="0" width="1280" height="683" />
     </state>
     <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.683@0.0.1280.683" timestamp="1583469529250" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StepDef.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StepDef.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
