@@ -15,7 +15,7 @@ public class HomePageSteps {
     }
 
     @Given("User navigates to Drop Box login Page")
-    public void a_user_navigates_to_Google_drive_HomePage() { homePage.goToHomePage(); }
+    public void a_user_navigates_to_Google_drive_HomePage() { homePage.goToHomePage(); homePage.clickSign(); }
 
     @When("User enters username {string}")
     public void user_adds_username(String username) { homePage.setUsername(username);
@@ -25,5 +25,5 @@ public class HomePageSteps {
     public void user_enters_password(String pwd) { homePage.setPwd(pwd); }
 
     @When("User clicks on login button")
-    public void user_clicks_on_login_button() { homePage.clickLogin();}
+    public void user_clicks_on_login_button() { homePage.EnterClick(); }
 }

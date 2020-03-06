@@ -8,27 +8,36 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BasePage {
 
-    private static final String HOME_PAGE_URL = "https://www.dropbox.com/login";
+    private static final String HOME_PAGE_URL = "https://depositfiles.com/";
 
     public HomePage(){
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//input[@name='login_email']")
+    @FindBy(xpath = "//*[@id='main']/div[1]/div[1]/a/strong")
+    @CacheLookup
+    WebElement sign_button ;
+
+    @FindBy(xpath = "//*[@id='login_frm']/table/tbody/tr[4]/td/input")
     @CacheLookup
     WebElement username_field ;
 
-    @FindBy(xpath = "//input[@name='login_password']")
+    @FindBy(xpath = "//*[@id='login_frm']/table/tbody/tr[5]/td/input")
     @CacheLookup
     WebElement password_field ;
 
-    @FindBy(xpath = "//div[@class='signin-text']")
+    @FindBy(xpath = "//*[@id='login_btn']")
     @CacheLookup
-    WebElement login_button ;
+    WebElement enter_button ;  //*[@id='login_btn']
+
 
     public void goToHomePage()
     {
         driver.get(HOME_PAGE_URL);
+    }
+
+    public void clickSign(){
+        sign_button.click();
     }
 
     public void setUsername(String username){
@@ -41,9 +50,7 @@ public class HomePage extends BasePage {
         password_field.sendKeys(pwd);
     }
 
-    public void clickLogin(){
-        login_button.click();
-    }
+    public void EnterClick(){enter_button.click();}
 
     public String getHomepageTitle(){
         return driver.getTitle();
