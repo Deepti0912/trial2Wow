@@ -1,5 +1,8 @@
 Feature: Home page
 
   Scenario: b
-    Given A user navigates to Google drive HomePage
-    Then Page tile is "Google Drive: Free Cloud Storage for Personal Use"
+    Given User navigates to Drop Box login Page
+    When User enters username "testingsyd123@gmail.com"
+    And User enters password "testing123@"
+    And User clicks on login button
+

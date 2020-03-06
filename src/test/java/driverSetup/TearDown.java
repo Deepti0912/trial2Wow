@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 public class TearDown {
 
-    private WebDriver driver;
+  /*  private WebDriver driver;
 
     public TearDown() {
         this.driver = Setup.driver;
@@ -27,5 +27,5 @@ public class TearDown {
         final byte[] screenshot = ((TakesScreenshot) driver)
                 .getScreenshotAs(OutputType.BYTES);
         scenario.embed(screenshot, "image/png");
-    }
+    }*/
 }

@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a9db3a8-8a86-487a-b5c9-f326506a6402" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/basePage/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/driverSetup/Setup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/driverSetup/TearDown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/homePage/HomePageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Home_page.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homePage/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDef.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/driverSetup/TearDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/driverSetup/TearDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/homePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homePage/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/homePage/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homePage/HomePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Home_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Home_page.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Home_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Home_page.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/trial2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/driverSetup/TearDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/driverSetup/TearDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/homePage/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/homePage/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/homePage/HomePageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/homePage/HomePageSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OpalCardAutomation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -203,46 +202,46 @@
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583458170835" />
     <state x="2552" y="161" key="FileChooserDialogImpl/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583488713554" />
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.683@0.0.1280.683" timestamp="1583447585857" />
-    <state width="1876" height="216" key="GridCell.Tab.0.bottom" timestamp="1583493559663">
+    <state width="1876" height="365" key="GridCell.Tab.0.bottom" timestamp="1583528786495">
       <screen x="1920" y="0" width="1920" height="1144" />
     </state>
     <state width="1251" height="241" key="GridCell.Tab.0.bottom/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583462305841" />
-    <state width="1876" height="216" key="GridCell.Tab.0.bottom/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583493559663" />
+    <state width="1876" height="365" key="GridCell.Tab.0.bottom/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583528786495" />
     <state width="1237" height="216" key="GridCell.Tab.0.bottom/0.0.1280.683@0.0.1280.683" timestamp="1583484033470" />
-    <state width="1876" height="216" key="GridCell.Tab.0.center" timestamp="1583493559663">
+    <state width="1876" height="365" key="GridCell.Tab.0.center" timestamp="1583528786495">
       <screen x="1920" y="0" width="1920" height="1144" />
     </state>
     <state width="1251" height="241" key="GridCell.Tab.0.center/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583462305840" />
-    <state width="1876" height="216" key="GridCell.Tab.0.center/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583493559663" />
+    <state width="1876" height="365" key="GridCell.Tab.0.center/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583528786495" />
     <state width="1237" height="216" key="GridCell.Tab.0.center/0.0.1280.683@0.0.1280.683" timestamp="1583484033470" />
-    <state width="1876" height="216" key="GridCell.Tab.0.left" timestamp="1583493559663">
+    <state width="1876" height="365" key="GridCell.Tab.0.left" timestamp="1583528786495">
       <screen x="1920" y="0" width="1920" height="1144" />
     </state>
     <state width="1251" height="241" key="GridCell.Tab.0.left/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583462305840" />
-    <state width="1876" height="216" key="GridCell.Tab.0.left/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583493559663" />
+    <state width="1876" height="365" key="GridCell.Tab.0.left/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583528786495" />
     <state width="1237" height="216" key="GridCell.Tab.0.left/0.0.1280.683@0.0.1280.683" timestamp="1583484033469" />
-    <state width="1876" height="216" key="GridCell.Tab.0.right" timestamp="1583493559663">
+    <state width="1876" height="365" key="GridCell.Tab.0.right" timestamp="1583528786495">
       <screen x="1920" y="0" width="1920" height="1144" />
     </state>
     <state width="1251" height="241" key="GridCell.Tab.0.right/0.0.1280.683/1920.0.1920.1144@0.0.1280.683" timestamp="1583462305841" />
-    <state width="1876" height="216" key="GridCell.Tab.0.right/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583493559663" />
+    <state width="1876" height="365" key="GridCell.Tab.0.right/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583528786495" />
     <state width="1237" height="216" key="GridCell.Tab.0.right/0.0.1280.683@0.0.1280.683" timestamp="1583484033470" />
-    <state width="1876" height="401" key="GridCell.Tab.1.bottom" timestamp="1583493302159">
+    <state width="1876" height="401" key="GridCell.Tab.1.bottom" timestamp="1583527332615">
       <screen x="1920" y="0" width="1920" height="1144" />
     </state>
-    <state width="1876" height="401" key="GridCell.Tab.1.bottom/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583493302159" />
-    <state width="1876" height="401" key="GridCell.Tab.1.center" timestamp="1583493302158">
+    <state width="1876" height="401" key="GridCell.Tab.1.bottom/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583527332615" />
+    <state width="1876" height="401" key="GridCell.Tab.1.center" timestamp="1583527332615">
       <screen x="1920" y="0" width="1920" height="1144" />
     </state>
-    <state width="1876" height="401" key="GridCell.Tab.1.center/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583493302158" />
-    <state width="1876" height="401" key="GridCell.Tab.1.left" timestamp="1583493302158">
+    <state width="1876" height="401" key="GridCell.Tab.1.center/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583527332615" />
+    <state width="1876" height="401" key="GridCell.Tab.1.left" timestamp="1583527332615">
       <screen x="1920" y="0" width="1920" height="1144" />
     </state>
-    <state width="1876" height="401" key="GridCell.Tab.1.left/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583493302158" />
-    <state width="1876" height="401" key="GridCell.Tab.1.right" timestamp="1583493302158">
+    <state width="1876" height="401" key="GridCell.Tab.1.left/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583527332615" />
+    <state width="1876" height="401" key="GridCell.Tab.1.right" timestamp="1583527332615">
       <screen x="1920" y="0" width="1920" height="1144" />
     </state>
-    <state width="1876" height="401" key="GridCell.Tab.1.right/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583493302158" />
+    <state width="1876" height="401" key="GridCell.Tab.1.right/0.0.1280.683/1920.0.1920.1144@1920.0.1920.1144" timestamp="1583527332615" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1583412725488">
       <screen x="0" y="0" width="1280" height="683" />
     </state>
@@ -260,5 +259,10 @@
       <screen x="0" y="0" width="1280" height="683" />
     </state>
     <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.683@0.0.1280.683" timestamp="1583469529250" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/open_Browser$Feature__Home_page.ic" NAME="Feature: Home_page Coverage Results" MODIFIED="1583527387324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>

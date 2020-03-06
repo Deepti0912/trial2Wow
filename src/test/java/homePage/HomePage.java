@@ -8,21 +8,21 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BasePage {
 
-    private static final String HOME_PAGE_URL = "https://www.google.com/drive/";
+    private static final String HOME_PAGE_URL = "https://www.dropbox.com/login";
 
     public HomePage(){
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//input[@id='usr']")
+    @FindBy(xpath = "//input[@name='login_email']")
     @CacheLookup
     WebElement username_field ;
 
-    @FindBy(xpath = "//input[@id='pwd']")
+    @FindBy(xpath = "//input[@name='login_password']")
     @CacheLookup
     WebElement password_field ;
 
-    @FindBy(xpath = "//input[@value='Login']")
+    @FindBy(xpath = "//div[@class='signin-text']")
     @CacheLookup
     WebElement login_button ;
 
