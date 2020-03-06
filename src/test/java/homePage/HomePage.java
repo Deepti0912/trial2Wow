@@ -1,16 +1,17 @@
-import org.openqa.selenium.WebDriver;
+package homePage;
+
+import basePage.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class HomePage extends BasePage {
 
-    public WebDriver ldriver ;
+    private static final String HOME_PAGE_URL = "https://www.google.com/drive/";
 
-    public LoginPage(WebDriver rdriver){
-        ldriver = rdriver;
-        PageFactory.initElements(rdriver,this);
+    public HomePage(){
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//input[@id='usr']")
@@ -25,6 +26,11 @@ public class LoginPage {
     @CacheLookup
     WebElement login_button ;
 
+    public void goToHomePage()
+    {
+        driver.get(HOME_PAGE_URL);
+    }
+
     public void setUsername(String username){
         username_field.clear();
         username_field.sendKeys(username);
@@ -37,6 +43,10 @@ public class LoginPage {
 
     public void clickLogin(){
         login_button.click();
+    }
+
+    public String getHomepageTitle(){
+        return driver.getTitle();
     }
 
 

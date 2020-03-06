@@ -1,38 +1,39 @@
 
+import homePage.HomePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+/*
 public class StepDef {
 
     public WebDriver driver;
+    public HomePage homePage;
+    String BaseURL = "https://www.google.com/drive/";
 
-    public LoginPage loginPage ;
-
-    @Given("^open google page$")
-    public void open_google_page() {
+    @Given("^User navigates to Dropbox login page$")
+    public void open_login_page() {
         System.setProperty("webdriver.chrome.driver","src/driver/chromedriver.exe");
         driver = new ChromeDriver() ;
-        loginPage = new LoginPage(driver);
-        driver.get("http://testing-ground.scraping.pro/login");
+        homePage = new HomePage();
+        driver.get(BaseURL);
     }
 
     @When("User enters username {string}")
     public void user_enters_username(String username) {
-        loginPage.setUsername(username);
+        homePage.setUsername(username);
     }
 
     @When("User enters password {string}")
     public void user_enters_password(String pwd) {
-        loginPage.setPwd(pwd);
+        homePage.setPwd(pwd);
     }
 
     @When("clicks on the login button")
     public void clicks_on_the_login_button() {
-        loginPage.clickLogin();
+        homePage.clickLogin();
     }
 
     @Then("user should be able to successfully login")
@@ -47,3 +48,5 @@ public class StepDef {
     }
 
 }
+
+ */
