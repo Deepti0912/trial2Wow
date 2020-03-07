@@ -3,17 +3,30 @@ package homePage;
 import io.cucumber.java.en.Then;
 import loginPage.LoginPage;
 
+import java.awt.*;
+
 public class HomePageSteps {
 
-    HomePage homePage ;
+    HomePage homePage;
 
-    public HomePageSteps()
-    {
+    public HomePageSteps() {
         this.homePage = new HomePage();
     }
 
-    @Then("User ia able to create a new folder by the name of {string}")
-    public void user_ia_able_to_create_a_new_folder_by_the_name_of(String folderName) {
-        homePage.createFolder(folderName);
+    @Then("User logs in successfully to the site")
+    public void user_logs_in_successfully_to_the_site() {
+        homePage.checkValidLogin();
+    }
+
+    @Then("User is able to create a new folder")
+    public void user_is_able_to_create_a_new_folder() {
+        String folderName = homePage.createNewFolder();
+        homePage.verifyNewFolderCreated(folderName);
+    }
+
+    @Then("User is able to upload a file in the folder")
+    public void user_is_able_to_upload_a_file_in_the_folder() throws AWTException {
+        homePage.uploadFile();
+        homePage.verifyFileUploaded();
     }
 }

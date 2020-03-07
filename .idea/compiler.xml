@@ -9,6 +9,7 @@
         <module name="trial2" />
         <module name="trial1" />
         <module name="open_Browser" />
+        <module name="box-storage-ui-automation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

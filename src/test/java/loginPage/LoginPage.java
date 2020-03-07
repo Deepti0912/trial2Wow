@@ -1,13 +1,17 @@
 package loginPage;
 
 import basePage.BasePage;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.rmi.server.UID;
 import java.sql.Driver;
@@ -17,11 +21,13 @@ import java.util.concurrent.TimeUnit;
 
 public class LoginPage extends BasePage {
 
-    private static final String HOME_PAGE_URL = "https://account.box.com/login";
-    private static final String HOME_PAGE_TITLE = "Login - Dropbox";
+    private static final String LOGIN_PAGE_URL = "https://account.box.com/login";
+    private static final String LOGIN_PAGE_TITLE = "Box | Login";
+    Logger log;
 
-    public LoginPage(){
+    public LoginPage() {
         PageFactory.initElements(driver, this);
+        log = Logger.getLogger("LoginPage");
     }
 
     @FindBy(xpath = "//input[@id='login-email']")
@@ -40,33 +46,18 @@ public class LoginPage extends BasePage {
     @CacheLookup
     WebElement login_button ;
 
-    @FindBy(xpath = "//*[@class='files-page-button-label']")
+    @FindBy(xpath = "//div[@class='form-error']")
     @CacheLookup
-    WebElement newMenu ;
+    WebElement invalidLogin_msg ;
 
-    @FindBy(xpath = "//*[text()='Folder']")
-    @CacheLookup
-    WebElement newFolder ;
-
-    //create folder pop up box
-    @FindBy(xpath = "//input[@name='folder-name']")
-    @CacheLookup
-    WebElement newFolder_input ;
-
-    @FindBy(xpath = "//*[text()='Create']")
-    @CacheLookup
-    WebElement newFolder_CreateButton ;
-
-    @FindBy(xpath = "//*[text()='Upload']")
-    @CacheLookup
-    WebElement uploadBtn;
-
-    public void goToHomePage()
+    public void goToLoginPage()
     {
-        driver.get(HOME_PAGE_URL);
+        driver.get(LOGIN_PAGE_URL);
         wait.forLoading(5);
-    }
 
+        String expectedLoginPageTitle = driver.getTitle();
+        Assert.assertEquals(expectedLoginPageTitle,LOGIN_PAGE_TITLE);
+    }
 
     public void setUsername(String username){
         username_field.clear();
@@ -83,37 +74,17 @@ public class LoginPage extends BasePage {
         login_button.click();
     }
 
-    public void checkTitle(){
-
-        String actualTitle = driver.getTitle();
-    }
-
-    public void createNewFolderAndUploadAFile() throws InterruptedException {
-        newMenu.click();
-        newFolder.click();
-
-        Random objGenerator = new Random();
-        int randomNumber = objGenerator.nextInt(100);
-        String testFolder = "Test" + Integer.toString(randomNumber);
-        newFolder_input.sendKeys(testFolder);
-        newFolder_CreateButton.click();
-
-        WebElement uploadFolder = driver.findElement(By.xpath("//a[text()='" + testFolder + "']"));
-        uploadFolder.click();
-
-       // uploadBtn.click();
-        Actions actions = new Actions(driver);
-        WebElement elementLocator = uploadBtn;
-
-        actions.clickAndHold(elementLocator);
-               // (elementLocator).perform();
-
-
-
-    }
-
-
-
-
-
+    public void checkInvalidUser() {
+        try {
+            if (invalidLogin_msg.isDisplayed()) {
+            }
+            else {
+                log.error("User with invalid details not validated properly");
+            }
+            } catch (NoSuchElementException e) {
+                log.error("User with invalid details not validated properly");
+            }
+        }
 }
+
+

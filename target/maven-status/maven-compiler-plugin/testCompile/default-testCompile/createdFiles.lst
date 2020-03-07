@@ -1,2 +1,9 @@
-StepDef.class
+homePage\HomePageSteps.class
+driverSetup\Wait.class
+homePage\HomePage.class
+loginPage\LoginPageSteps.class
+basePage\BasePage.class
+loginPage\LoginPage.class
+driverSetup\Setup.class
+driverSetup\TearDown.class
 Runner.class
