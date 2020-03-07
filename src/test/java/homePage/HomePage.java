@@ -29,6 +29,7 @@ public class HomePage extends BasePage {
     public void goToHomePage()
     {
         driver.get(HOME_PAGE_URL);
+        wait.forLoading(5);
     }
 
     public void setUsername(String username){
