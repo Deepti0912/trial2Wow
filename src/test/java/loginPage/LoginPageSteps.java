@@ -22,8 +22,7 @@ public class LoginPageSteps {
 
     @Then("User is able to successfully login")
     public void user_is_able_to_successfully_login() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        loginPage.checkTitle();
     }
 
 
