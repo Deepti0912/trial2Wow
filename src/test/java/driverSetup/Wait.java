@@ -8,13 +8,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Wait {
 
     private WebDriver driver;
 
     public Wait(WebDriver driver) {
+
         this.driver = driver;
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     private void waitUntilCondition(ExpectedCondition condition, String timeoutMessage, int timeout) {

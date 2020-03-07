@@ -23,7 +23,7 @@ public class HomePage extends BasePage {
     WebElement folderNameTextBox ;
 
     public void createFolder(String folderName){
-        
+
          wait.forElementToBeDisplayed(10, newFolderMenu, "new folder" );
 
  //       wait.forLoading(20);
