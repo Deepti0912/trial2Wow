@@ -1,8 +1,7 @@
-Feature: Home page
+Feature: Login to Dropbox site
 
-  Scenario: b
-    Given User navigates to Drop Box login Page
-    When User enters username "testing123syd@gmail.com"
-    And User enters password "testing123@"
-    And User clicks on login button
+  Scenario: Validate user with valid login details can successfully login to DropBox site
+
+    Given User enters username "testing123syd@gmail.com" and password "testing123@" on DropBox site
+    Then  User is able to successfully login
 

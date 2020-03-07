@@ -1,4 +1,4 @@
-package homePage;
+package loginPage;
 
 import basePage.BasePage;
 import org.openqa.selenium.WebElement;
@@ -6,11 +6,11 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends BasePage {
+public class LoginPage extends BasePage {
 
     private static final String HOME_PAGE_URL = "https://www.dropbox.com/login";
 
-    public HomePage(){
+    public LoginPage(){
         PageFactory.initElements(driver, this);
     }
 
