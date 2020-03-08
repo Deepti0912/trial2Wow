@@ -20,7 +20,7 @@ public class Wait {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
-    private void waitUntilCondition(ExpectedCondition condition, String timeoutMessage, int timeout) {
+    public void waitUntilCondition(ExpectedCondition condition, String timeoutMessage, int timeout) {
         WebDriverWait wait = new WebDriverWait(driver, timeout);
         wait.withMessage(timeoutMessage);
         wait.until(condition);

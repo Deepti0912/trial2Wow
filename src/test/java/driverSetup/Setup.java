@@ -35,6 +35,4 @@ public class Setup {
                 throw new IllegalArgumentException("Browser \"" + browser + "\" isn't supported.");
         }
     }
-
-
 }
